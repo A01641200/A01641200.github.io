@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>WebFea</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="WebFea.css">
+   </head> 
+
+   <body>
+        <header>
+            <p>Karla Denisse Martinez Ponce</p>
+        </header>
+
+        <div class="Introduccion">
+            <h2>Introduction</h2>
+            <h3>¿Que es HTML?</h3>
+            <p>
+                HTML (HyperText Markup Language) es el lenguaje de programacion usualmente utilizado
+                para realizar la estructura de las paginas web.
+                Mas que un lenguaje de programacion, es un lenguaje "marcado", 
+                ya que le indica a los navegadores que es cada elemento y como se organiza en pantalla. 
+                Es decir, HTML le dice a los navegadores como se debe ver la pagina web.
+            </p>
+        </div>
+
+        <div class="cards">
+            <h2>La estructura basica del HTML esta conformada por:</h2>
+            <p class="texto">
+                <ol>
+                    <li>!DOCTYPE html: declara que el documento utiliza HTML5 (el lenguaje y la version).</li>
+                    <li>html: contiene todo el documento.</li>
+                    <li>head: guarda los metadatos de la pagina (titulo, codificacion de caracteres (UTF-8 por ejemplo), descripciones para buscadores). No es visible para las personas que usen la pagina web, pero si para los navegadores.</li>
+                    <li>body: contiene todo el contenido visible: textos, imagenes, enlaces, formularios y videos.</li>
+                </ol>
+                Luego estan los tags/etiquetas basicas, las cuales se representan por "<>"", y se encargan de 
+                declarar que tipo de elemento es cada cosa por ejemplo:
+                <ul>
+                    <li>Titulos/encabezados, indicados por h1, h2, ...h6</li>
+                    <li>Parrafos, indicados por p</li>
+                    <li>Imagenes, indicadas por img</li>
+                    <li>Enlaces, indicados por a href="..."</li>
+                    <li>Listas (ordenadas o desordenadas como la utilizada AQUI), indicadas por ul, ol, li</li>
+                    <li>Divisiones (que son grupos de elementos, esto facilita darle estilo a la pagina), indicados por div</li>
+                    <li>Formularios (donde los usuarios pueden poner texto/contestar/escribir), indicados por form</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="imagenes_centradas">
+            <h2>Etiquetas (tags) basicas</h2>
+            <img src="PartesWeb.gif" alt="partesweb" height="500px">
+        </div>
+        
+        <h1>Section</h1>
+        <section class="seccion-perro-feliz">
+            <p>
+                Una seccion es un agrupamiento de contenido tematico, tipicamente con un encabezado.
+                Como las tarjetas que te hacian hacer en la primaria, que es de un solo tema y tiene titulo y texto.
+
+            </p>
+            <aside>
+                <img src="perro-feliz.jpg" alt="perro feliz me representa en esta act">
+            </aside>
+        </section>
+
+        <div class="articulo">
+            <section>
+                <h1>Article</h1>
+                <p>
+                    Indica un elemento independiente y autonomo (no depende de nada, ni del resto de de la pagina).
+                    Se usa para publicaciones en foros, entradas de blog, comentarios de los usuarios, etc.
+                </p>
+            </section>
+        </div>
+
+        <section class="cards">
+            <h1>Aside</h1>
+            <p>
+                Es un elemento que define un contenido adicional al contenido en el que se encuentra (como una barra lateral).
+                El contenido debe estar relacionado indirectamente con el contenido circundante.
+            </p>
+        </section>
+
+        <section>
+            <h1>Header</h1>
+            <p>
+                Es un elemento que le da un espacio definido, normalmente contenido introductorio
+                o conjunto de enlaces de navegacion. Normalmente contiene elementos de encabezado (h1, ...h6)
+                logotipos e informacion de autoria.
+            </p>
+        </section>
+
+        <section>
+            <h1>Footer</h1>
+            <p>
+                Es un pie de pagina para una pagina web o una seccion.
+            </p>
+        </section>
+        
+        <div class="Demostracion">
+            <h2>Demostracion de que se hacer una tabla :)</h2>
+        </div>
+        <div class="demostracion_tabla">
+            <table>
+                <tr>
+                    <td>Primera celda</td>
+                    <td>Segunda celda</td>
+                    <td>Tercer celda</td>
+                    <td>Hola</td>
+                </tr>
+                <tr>
+                    <td>Primera celda, segunda fila</td>
+                    <td>Segunda celda, segunda fila</td>
+                    <td>Tercer celda, segunda fila</td>
+                    <td>Hola2</td>
+                </tr>
+            </table>
+            <aside>
+                <img src="gato-feliz.jpg" alt="gato feliz">
+            </aside>
+        </div>
+
+        <div class="intro_css">
+            <h2>CSS</h2>
+            <h3>Introduccion</h3>
+        </div>
+        
+        <div class="informacion">
+            <h4>¿Que es CSS?</h4>
+            <p>
+                Cascading Style Sheets (CSS) es el lenguaje de programacion utilizado
+                para determinar el diseño de los documentos electronicos (en este caso, se utiliza para darle formato a las paginas web)
+                Con CSS se hacen cambios como la tipografia, el tamaño, etc.
+            </p>
+        </div>
+
+        <div class="cards">
+            <h4>¿Como aplicas CSS a HTML?</h4>
+            <p>
+                Hay 3 formas populares de aplicar CSS a HTML para darle estilo a una pagina web:
+                <ol type="A">
+                    <li>La primera opcion, la cual es utilizada aqui, donde se vincula el archivo html a un archivo de hoja de estilo (css) separado usando link rel="stylesheet" href=".css" en el head</li>
+                    <li>La segunda opcion es implementando CSS en una etiqueta de estilo (style)</li>
+                    <li>Y la tercera opcion es agregando estilos en línea a elementos HTML</li>
+                </ol>
+            </p>
+        </div>
+
+        <h4>¿Que es un selector?</h4>
+        <p>
+            Los selectores definen sobre qué elementos se aplicara un conjunto de reglas CSS.
+            Los selectores principales son:
+            <ul>
+                <li>De tipo, por ejemplo input</li>
+                <li>De clase, por ejemplo .nombreDeLaClaseEnHTML</li>
+                <li>De ID, por ejemplo #ID</li>
+                <li>Universal, que se representa con *</li>
+                <li>De atributo, por ejemplo [type="button"]</li>
+            </ul>
+        </p>
+
+        <div class="informacion">
+            <h4>¿Que es una regla de CSS?</h4>
+            <p>
+                "At-rules", o reglas, en CSS se refieren a las instrucciones CSS que indican como comportarse.
+                Empiezan por @ y son seguidas de un identificador y finalizan con ;
+                Se usan para agrupar y estructurar reglas de estilo y otras reglas, declarar información de estilo no 
+                asociada directamente con el contenido seleccionado, entre otras funciones.
+            </p>
+        </div>
+        <div class="imagenes_centradas">
+            <h2>32 niveles de FlukeOut</h2>
+            <img src="CSS_Diner.png" alt="Los 32 niveles completados" width="500px">
+        </div>
+
+        <div class="imagen_fondo">
+            <h2>CSS basico</h2>
+            <h3>¿Que es una clase?</h3>
+            <p>Una clase en HTML es un atributo que permite agrupar varios elementos para aplicarles los mismos estilos o comportamientos 
+                mediante CSS o JavaScript. Se puede usar en multiples elementos dentro de una misma pagina.
+            </p>
+
+            <h3>¿Que es un ID?</h3>
+            <p>Un ID es un atributo en HTML que sirve para identificar de manera UNICA a un SOLO elemento dentro de una pagina. 
+                Este ID no debe repetirse en otros elementos.
+            </p>
+
+            <h3>¿Como se relacionan con CSS?</h3>
+            <p>En CSS, las clases se seleccionan con un punto (.) seguido del nombre de la clase, y los IDs se seleccionan con el simbolo # seguido del nombre del ID. 
+                Ambos permiten aplicar estilos, pero las clases son reutilizables y los IDs son unicos.</p>
+
+            <h3>Tag Selector</h3>
+            <p>Tambien llamado selector de elementos, selecciona todos los elementos HTML del tipo especificado.</p>
+            <ul>
+                <li>p</li>
+            </ul>
+
+            <h3>Class Selector</h3>
+            <p>Selecciona los elementos en la pagina con la clase especificada (una clase puede aparecer varias veces en una pagina).</p>
+            <ul>
+                <li>.mi-clase</li>
+            </ul>
+
+            <h3>Tag and Class Selector</h3>
+            <p>Selecciona un elemento por etiqueta y clase al mismo tiempo.</p>
+            <ul>
+                <li>p.mi-clase</li>
+            </ul>
+
+            <h3>ID selector</h3>
+            <p>Selecciona el elemento en la pagina con el ID especificado (en una página HTML dada, solo se permite un unico elemento por ID).</p>
+            <ul>
+                <li>#mi-id</li>
+            </ul>
+        </div>
+
+        <div class="cards">
+            <h3>¿Que es un Box Model en CSS?</h3>
+            <p>Es una caja que envuelve un elemento HTML y controla el diseño y la disposición.
+                En CSS, cada elemento se comporta como una caja, y esa caja tiene 4 partes principales:
+                <ul>
+                    <li>Content</li>
+                    <li>Padding</li>
+                    <li>Border</li>
+                    <li>Margin</li>
+                </ul>
+            </p>
+        </div>
+        <div class="Introduccion">
+            <h3>Explica que son las "Media queries"</h3>
+            <p>Media queries o "consultas de medios" (traducida directamente al español)
+                permiten aplicar estilos CSS segun el tipo general de un dispositivo u otras caracteristicas
+                como la resolucion de la pantalla o el ancho del viewport del navegador.
+                En otras palabras es un ajuste para dispositivos especificos.
+                <aside>
+                    <img src="MediaQueries.png" alt="Media queries visualmente" width="500px">
+                </aside>
+            </p>
+        </div>
+        
+        <div class="cards">
+            <h2>Layout en CSS</h2>
+            <p>Formalmente la propiedad display establece los tipos de visualizacion interna y externa de un elemento. 
+                La externa establece la participacion de un elemento en flow layout; 
+                la interna establece el layout o Diseño de los hijos
+            </p>
+
+            <h3>Display: grid</h3>
+            <p>El elemento se comporta como un elemento de bloque y establece su contenido de acuerdo con el modelo de cuadricula.</p>
+            <ul>
+                <li>Sirve para crear diseños en dos dimensiones: filas y columnas.</li>
+                <li>Permite definir estructuras como rejilla o cuadricula.</li>
+                <li>Es ideal para layouts mas complejos.</li>
+            </ul>
+
+            <h3>Display: flex</h3>
+            <p>El elemento se comporta como un elemento de bloque y establece su contenido de acuerdo con el modelo de flexbox .</p>
+            <ul>
+                <li>Sirve para alinear elementos en una sola dirección: fila o columna.</li>
+                <li>Permite distribuir espacio y alinear fácilmente elementos.</li>
+                <li>Es ideal para layouts simples.</li>
+            </ul>
+        </div>
+
+        <h2>24 niveles de Flex Box Froggy</h2>
+        <div class="imagenes_centradas">
+            <img src="Froggy.png" alt="Los 24 niveles completados" width="500px">
+        </div>
+
+        <div class="imagenes_cards">
+            <h2>Copia de WikiLeaks</h2>
+            <h3>La copia que hice yo: </h3>
+            <div class="imagenes_centradas">
+                <img src="WikiLeaksAvance3.png" alt="WikiLeaks" width="500px">
+            </div>
+            <h3>La copia que hice pero usando un framework (chota) de CSS: </h3>
+            <div class="imagenes_centradas">
+                <img src="WikiChota.png" alt="WikiLeaks chota" width="500px">
+            </div>
+            <p>Usando link rel="stylesheet" href="https://unpkg.com/chota@latest"</p>
+        </div>
+
+        <h2>Referencias</h2>
+        <div class="Referencias">
+            <p>
+                Codecademy. (s.f.). Learn CSS: The Box Model Cheatsheet - Codecademy. Codecademy. https://www.codecademy.com/learn/fscp-improved-styling-with-css/modules/fecp-learn-css-the-box-model/cheatsheet
+                IONOS. (21 de junio del 2022). ¿Qué es CSS? Definicion y aplicacion. IONOS. https://www.ionos.mx/digitalguide/paginas-web/diseno-web/que-es-css/
+                Marin, R. (s.f.). Los 5 métodos para incluir css en html que deberías conocer. INESEM. https://www.inesem.es/revistadigital/informatica-y-tics/incluir-css-en-html
+                MDN Web Docs. (7 de noviembre del 2025). At-rules. Developer Mozilla. https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/At-rules
+                MDN Web Docs. (31 de marzo del 2026). CSS basico. Developer Mozilla. https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content
+                MDN Web Docs. (31 de marzo del 2026). Selectores CSS. Developer Mozilla. https://developer.mozilla.org/es/docs/Web/CSS/Guides/Selectors#:~:text=Los%20selectores%20definen%20sobre%20qu%C3%A9,un%20conjunto%20de%20reglas%20CSS.
+                MDN Web Docs. (31 de marzo del 2026). Uso de media queries - CSS - MDN Web Docs. Developer Mozilla. https://developer.mozilla.org/es/docs/Web/CSS/Guides/Media_queries/Using#:~:text=Las%20Media%20queries%20le%20permiten,ancho%20del%20viewport%20del%20navegador.
+                Universidad Europea. (24 de marzo del 2026). Qué es HTML: el lenguaje con el que se construye la web. Universidad Europea. https://universidadeuropea.com/blog/que-es-html/
+                W3 Schools. (s.f.). HTML Semantic Elements. W3Schools. https://www.w3schools.com/html/html5_semantic_elements.asp
+                
+                Extras (usadas para el diseño):
+                https://www.w3schools.com/html/html_images_background.asp
+                https://www.w3schools.com/css/css_list.asp
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside
+                https://www.youtube.com/watch?v=KIKR0FHwEbo&t=146s
+                https://welearncode.com/rainbow-text/#:~:text=One%20method%20for%20adding%20a,the%20left%20of%20the%20letter.
+                https://www.w3schools.com/css/css_border.asp
+
+        </p>
+        </div>
+   </body>
+</html>
