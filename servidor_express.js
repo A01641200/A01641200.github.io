@@ -111,6 +111,24 @@ app.get('/prestamos', (req, res) => {
   res.json(prestamos);
 });
 
+//Ejercicio inventado 
+app.get('/getPartners/:id', (req, res) => {
+
+  const bancos = [
+    { id: 1, nombre: 'ADIDAS' },
+    { id: 2, nombre: 'MAC' },
+    { id: 3, nombre: 'PUMA' }
+  ];
+
+  const tiendaPartner = tiendaPartner.find(b => b.id == req.params.id);
+
+  if (!tiendaPartner) {
+    return res.status(404).send('No es tienda Partner de Kueski');
+  }
+
+  res.json(tiendaPartner);
+});
+
 //Errores
 
 // Esto se ejecuta si ninguna ruta existe. Express lo facilita mucho
